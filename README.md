@@ -5,8 +5,12 @@ Abstract Syntax Trees dump
 clang installed (https://releases.llvm.org/download.html)
 
 ## Build
-clang++ ast-dump.cpp -o ast-dump -lclang
+make
 
 ## Run
+```
 ./ast-dump test.cpp
-
+Number of functions: 2
+int C::f(int x)
+int g(int x, int y)
+```

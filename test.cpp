@@ -1,3 +1,8 @@
+//#include <string>
+
+struct s{
+	int x;
+};
 
 class C
 {
@@ -9,12 +14,16 @@ private:
 };
 
 int C::f(int x){
-	int result = x + 10;
+	int result = 10;
+	result+=x;
+	int *p=&result;
 	return result;
 }
 
 int g(int x,
       int y){
-	return x+y;
+	int a;
+	a = x+y;
+	return a;
 }
 
